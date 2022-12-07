@@ -1,3 +1,5 @@
+import Link from 'next/link'
+
 export default function Pricing() {
   return (
     <>
@@ -25,14 +27,14 @@ export default function Pricing() {
                 <li>Email support</li>
                 <li>Help center access</li>
               </ul>
-              <a href="/">
+              <Link href="/">
                 <button
                   type="button"
                   className="btn btn-lg btn-block btn-outline-primary"
                 >
                   Go to Albums
                 </button>
-              </a>
+              </Link>
             </div>
           </div>
           <div className="card mb-4 shadow-sm">

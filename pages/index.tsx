@@ -7,6 +7,7 @@ import { IAlbum } from "../types";
 import { getAlbums } from "../lib/albums";
 import AlbumCard from "../components/albums";
 import { useSession, signIn, signOut } from "next-auth/react";
+import Link from 'next/link'
 
 export default function Home({
   allAlbums,
@@ -33,12 +34,12 @@ export default function Home({
                 short so folks don't simply skip over it entirely.
               </p>
               <p>
-                <a href="/products" className="btn btn-primary my-2 mx-3">
+                <Link href="/products" className="btn btn-primary my-2 mx-3">
                   View Products
-                </a>
-                <a href="/pricing" className="btn btn-secondary my-2">
+                </Link>
+                <Link href="/pricing" className="btn btn-secondary my-2">
                   Pricing
-                </a>
+                </Link>
               </p>
             </div>
           </section>

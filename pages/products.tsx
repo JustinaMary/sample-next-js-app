@@ -1,3 +1,5 @@
+import Link from 'next/link'
+
 export default function Products() {
   return (
     <div>
@@ -8,9 +10,9 @@ export default function Products() {
             And an even wittier subheading to boot. Jumpstart your marketing
             efforts with this example based on Apple's marketing pages.
           </p>
-          <a className="btn btn-outline-secondary" href="/pricing">
+          <Link className="btn btn-outline-secondary" href="/pricing">
             Go to Pricing
-          </a>
+          </Link>
         </div>
         <div className="product-device shadow-sm d-none d-md-block"></div>
         <div className="product-device product-device-2 shadow-sm d-none d-md-block"></div>
