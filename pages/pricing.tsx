@@ -1,4 +1,4 @@
-import Link from 'next/link'
+import Link from "next/link";
 
 export default function Pricing() {
   return (
@@ -7,7 +7,7 @@ export default function Pricing() {
         <h1 className="display-4">Pricing</h1>
         <p className="lead">
           Quickly build an effective pricing table for your potential customers
-          with this Bootstrap example. It's built with default Bootstrap
+          with this Bootstrap example. It&apos;s built with default Bootstrap
           components and utilities with little customization.
         </p>
       </div>

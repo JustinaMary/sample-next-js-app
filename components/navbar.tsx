@@ -1,9 +1,10 @@
 import Image from "next/image";
+import Link from 'next/link'
 
 export default function Navbar() {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
-      <a className="navbar-brand" href="/">
+      <Link className="navbar-brand" href="/">
         <Image
           src="https://www.getautismactive.com/wp-content/uploads/2021/01/Test-Logo-Circle-black-transparent.png"
           alt="Logo"
@@ -11,7 +12,7 @@ export default function Navbar() {
           height={70}
           priority
         ></Image>
-      </a>
+      </Link>
       <button
         className="navbar-toggler"
         type="button"
@@ -27,19 +28,19 @@ export default function Navbar() {
       <div className="collapse navbar-collapse" id="navbarSupportedContent">
         <ul className="navbar-nav mr-auto">
           <li className="nav-item active">
-            <a className="nav-link" href="/">
+            <Link className="nav-link" href="/">
               Home <span className="sr-only"></span>
-            </a>
+            </Link>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="/products">
+            <Link className="nav-link" href="/products">
               Products
-            </a>
+            </Link>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="/pricing">
+            <Link className="nav-link" href="/pricing">
               Pricing
-            </a>
+            </Link>
           </li>
         </ul>
       </div>

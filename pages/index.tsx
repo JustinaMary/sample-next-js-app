@@ -7,7 +7,7 @@ import { IAlbum } from "../types";
 import { getAlbums } from "../lib/albums";
 import AlbumCard from "../components/albums";
 import { useSession, signIn, signOut } from "next-auth/react";
-import Link from 'next/link'
+import Link from "next/link";
 
 export default function Home({
   allAlbums,
@@ -21,7 +21,9 @@ export default function Home({
         <div className="col-md-4 offset-md-4 my-5 text-center">
           <h4>Please Sign in to view the albums</h4>
           <br />
-          <button onClick={() => signIn()} className="btn btn-success">Sign in</button>
+          <button onClick={() => signIn()} className="btn btn-success">
+            Sign in
+          </button>
         </div>
       ) : (
         <main role="main">
@@ -31,7 +33,7 @@ export default function Home({
               <p className="lead text-muted">
                 Something short and leading about the collection below—its
                 contents, the creator, etc. Make it short and sweet, but not too
-                short so folks don't simply skip over it entirely.
+                short so folks don&apos;t simply skip over it entirely.
               </p>
               <p>
                 <Link href="/products" className="btn btn-primary my-2 mx-3">
@@ -48,8 +50,8 @@ export default function Home({
             <div className="container">
               <div className="row">
                 {albumList.length > 0 &&
-                  albumList.map((data) => (
-                    <div className="col-md-4">
+                  albumList.map((data, index) => (
+                    <div className="col-md-4" key={index}>
                       <AlbumCard album={data}></AlbumCard>
                     </div>
                   ))}

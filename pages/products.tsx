@@ -1,4 +1,4 @@
-import Link from 'next/link'
+import Link from "next/link";
 
 export default function Products() {
   return (
@@ -8,7 +8,7 @@ export default function Products() {
           <h1 className="display-4 font-weight-normal">Punny headline</h1>
           <p className="lead font-weight-normal">
             And an even wittier subheading to boot. Jumpstart your marketing
-            efforts with this example based on Apple's marketing pages.
+            efforts with this example based on Apple&apos;s marketing pages.
           </p>
           <Link className="btn btn-outline-secondary" href="/pricing">
             Go to Pricing
